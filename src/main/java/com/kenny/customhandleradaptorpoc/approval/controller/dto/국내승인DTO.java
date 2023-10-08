@@ -1,4 +1,4 @@
-package com.kenny.customhandleradaptorpoc.approval.service.dto;
+package com.kenny.customhandleradaptorpoc.approval.controller.dto;
 
 import lombok.Builder;
 import lombok.Getter;
