@@ -14,4 +14,11 @@ public class 해외승인Service {
                 .결과코드("OK")
                 .build();
     }
+
+    public 해외승인DTO.취소.Out process해외승인취소(final 해외승인DTO.취소.In input ) {
+        log.debug( "# 해외승인Service process해외승인취소 : {}", input.toString());
+        return 해외승인DTO.취소.Out.builder()
+                .결과코드("OK")
+                .build();
+    }
 }
