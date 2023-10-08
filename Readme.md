@@ -17,11 +17,14 @@
 
 ## Requirements
 **기능 요건**
-1. 국내승인, 국내승인취소, 해외승인, 해외승인취소를 구현한다.
-    - 각각의 기능은 서로 다른 payload를 갖는다.
+1. [REQ-1] 국내승인을 구현한다
+2. [REQ-2] 국내승인취소를 구현한다
+3. [REQ-3] 해외승인을 구현한다
+4. [REQ-4] 해외승인취소를 구현한다
+    - 위 각 기능은 서로 다른 payload를 갖는다.
 
 **비기능 요건**
-1. byte[]를 payload로 받는 1개의 API를 HandlerAdaptor를 통해, 국내승인 / 국내승인취소 등의 API로 routing 한다.
+1. [REQ-5] byte[]를 payload로 받는 1개의 API를 HandlerAdaptor를 통해, 국내승인 / 국내승인취소 등의 API로 routing 한다.
    - byte[]의 첫번째 3자리가 국내승인, 국내승인취소 등을 구분하는 구분자다.
 
 ---
