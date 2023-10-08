@@ -34,8 +34,4 @@
 
 ---
 
-## Timeline
-
----
-
 ## Reference Materials
