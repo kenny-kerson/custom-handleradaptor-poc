@@ -26,6 +26,8 @@
 **비기능 요건**
 1. [REQ-5] byte[]를 payload로 받는 1개의 API를 HandlerAdaptor를 통해, 국내승인 / 국내승인취소 등의 API로 routing 한다.
    - byte[]의 첫번째 3자리가 국내승인, 국내승인취소 등을 구분하는 구분자다.
+2. [REQ-6] HttpServletRequest의 inputStream을 여러번 사용하기 위해, 이를 wrapping하는 클래스를 만든다.
+3. [REQ-7] ServletFilter에서 HttpServletRequest를 REQ-6번의 Wrapper로 감싼다.
 
 ---
 
@@ -38,3 +40,6 @@
 ---
 
 ## Reference Materials
+- [Spring MVC의 Request Flow 정리](https://hyos-dev-log.tistory.com/m/21)
+- [Spring(2) Spring Web MVC](https://velog.io/@hanblueblue/%EB%B2%88%EC%97%AD-Spring2-Spring-Web-MVC)
+- [Spring MVC HandlerAdapter 분석하기](https://velog.io/@jihoson94/Spring-MVC-HandlerAdapter-%EB%B6%84%EC%84%9D%ED%95%98%EA%B8%B0)

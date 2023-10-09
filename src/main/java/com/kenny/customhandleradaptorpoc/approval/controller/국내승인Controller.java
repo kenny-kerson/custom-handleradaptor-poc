@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class 국내승인Controller {
 
+    public static final String BEAN_NAME = "국내승인Controller";
+
     private final 국내승인Service domesticApprovalService;
 
     @PostMapping("/approval/domestic")
@@ -22,8 +24,8 @@ public class 국내승인Controller {
     }
 
     @PostMapping("/approval/domestic/cancle")
-    public 국내승인DTO.취소.Out process국내취소( @RequestBody final 국내승인DTO.취소.In input ) {
-        log.debug("# 국내승인Controller process국내취소 : {}", input.toString());
+    public 국내승인DTO.취소.Out process국내승인취소(@RequestBody final 국내승인DTO.취소.In input ) {
+        log.debug("# 국내승인Controller process국내승인취소 : {}", input.toString());
         return domesticApprovalService.process국내승인취소(input);
     }
 }
