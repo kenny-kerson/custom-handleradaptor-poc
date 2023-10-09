@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class 해외승인Controller {
 
+    public static final String BEAN_NAME = "해외승인Controller";
+
     private final 해외승인Service overseaApprovalServce;
 
     @PostMapping("/approval/oversea")
